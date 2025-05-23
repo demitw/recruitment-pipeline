@@ -1,0 +1,51 @@
+
+.sidebar {
+  width: 72px;
+  background-color: #ffffff;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px; /* space for navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  overflow: hidden; /* prevents inner scroll issues */
+}
+
+
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;       /* pushes bottom-icons down */
+  overflow: hidden;   /* just in case of too many items */
+}
+
+.bottom-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 22px;
+  color: #555;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #1e40af;
+}

@@ -1,0 +1,84 @@
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100vw;
+  background-color: #0f172a;
+  color:white;
+  z-index: 1000;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Left: Brand */
+.left-section {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Center: Page Links */
+.center-links {
+  display: flex;
+  gap: 24px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link {
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+
+.link.active {
+  border-bottom: 2px solid white;
+}
+
+/* Right: Icons and Add button */
+.right-icons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.add-btn {
+  background-color: #facc15; 
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

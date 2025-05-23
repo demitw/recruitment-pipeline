@@ -1,0 +1,144 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f2f6;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.app-container {
+  display: flex;
+  padding: 20px;
+  overflow-x: auto;
+  gap: 16px;
+  height: calc(100vh - 70px);
+  
+}
+
+.column {
+  flex: 1 1 300px; /* allows responsiveness */
+  max-width: 340px;
+  min-width: 260px;
+  background-color: #f8f9fb;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.column-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  position: relative;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+.card strong {
+  font-size: 15px;
+}
+
+.card .dropdown {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.card .dropdown div {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #dc2626;
+}
+
+
+.badge {
+  display: inline-block;
+  background-color: #e0f3ff;
+  color: #0284c7;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.button {
+  margin-top: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #f1f2f6;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.layout {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.app-outer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  padding-top: 50px; /* Same as .top-navbar height */
+  height: calc(100vh - 50px); 
+}
+
+
+
+.kanban-content {
+  flex: 1;
+  overflow-x: auto;
+  background-color: #f9fafb;
+
+  /* Apply equal padding left and right (equal to sidebar width) */
+  padding: 0 40px;   /* Left & right spacing equalized */
+  margin-left: 72px; /* width of left sidebar */
+  margin-right: 60px; /* width of right bar */
+  box-sizing: border-box;
+}
+
